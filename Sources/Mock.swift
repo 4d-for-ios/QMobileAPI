@@ -4,6 +4,7 @@
 //
 
 import Foundation
+import Moya
 
 extension URL {
     
@@ -11,6 +12,8 @@ extension URL {
 }
 
 public class APIManager {
+    /// Alias for network progression request callback.
+    public typealias ProgressHandler = Moya.ProgressBlock
     /// Default instance of `Self` which use `URL.qmobile` as base url
     public static var instance = APIManager(url: URL.qmobile)
 
@@ -62,5 +65,108 @@ extension AuthToken {
 extension AuthToken: Equatable {
     public static func == (lhf: AuthToken, rhf: AuthToken) -> Bool {
         return lhf.token == rhf.token && lhf.id == rhf.id
+    }
+}
+
+/// Status of 4D rest server.
+public struct Status {
+    static let okKey = "ok"
+    static let successKey = "success"
+
+    /// `true` if server ok
+    public var ok: Bool
+
+    public init(ok: Bool) {
+        self.ok = ok
+    }
+}
+public struct ImportableParser {
+
+    public enum Error: Swift.Error {
+        case emptyJSON
+        case noTable
+        case incoherentTableName(String, String)
+        case builderReturnNil
+    }
+}
+/// An error from data store
+public enum APIError: Swift.Error {
+    /// Indicates that JSON data for one page is not decodable.
+    case jsonMappingFailed(JSON, Any.Type)
+
+    /// Indicates that JSON data have incoherence and records could not be decoded.
+    case recordsDecodingFailed(JSON, ImportableParser.Error)
+
+    /// Indicates a response failed due to an underlying `Error`.
+    case request(Swift.Error)
+
+    /// Indicates a json decoding process due to an underlying `Error` .
+    case jsonDecodingFailed(Swift.Error)
+
+    /// Indicates a string decoding process due to an underlying `Error` .
+    case stringDecodingFailed(Swift.Error)
+}
+
+public struct JSON {}
+
+// MARK: authentificate
+///  mobileapp/$authenticate/
+public class AuthTarget: TargetType {
+    public var baseURL: URL = URL.qmobile
+    
+    public var path: String = ""
+    
+    public var method: Moya.Method = .post
+    
+    public var sampleData: Data = Data()
+    
+    public var task: Task = .requestPlain
+    
+    public var headers: [String : String]?
+    
+    public enum Send: String {
+        case link
+        case code
+    }
+}
+
+class MockCancellable: Cancellable {
+    var isCancelled: Bool  = false
+    
+    func cancel() {
+        isCancelled = true
+    }
+}
+
+// MARK: Auth
+extension APIManager {
+    public typealias CompletionAuthTokenHandler = ((Result<AuthToken, APIError>) -> Void)
+    /// Authentificate with login and password.
+    open func authentificate(login: String,
+                             password: String? = nil,
+                             send: AuthTarget.Send = .link,
+                             parameters: [String: Any]? = nil,
+                             callbackQueue: DispatchQueue? = nil,
+                             progress: ProgressHandler? = nil,
+                             completionHandler: @escaping CompletionAuthTokenHandler) -> Cancellable {
+        return MockCancellable()
+    }
+
+    /// Authentificate with token.
+    open func authentificate(token: String,
+                             callbackQueue: DispatchQueue? = nil,
+                             progress: ProgressHandler? = nil,
+                             completionHandler: @escaping CompletionAuthTokenHandler) -> Cancellable {
+        return  MockCancellable()
+    }
+
+     
+    /// Logout using token in headers or passed token.
+    public typealias CompletionLogOutHandler = ((Result<Status, APIError>) -> Void)
+    open func logout(token: String? = nil,
+                     callbackQueue: DispatchQueue? = nil,
+                     progress: ProgressHandler? = nil,
+                     completionHandler: @escaping CompletionLogOutHandler) -> Cancellable {
+        return MockCancellable()
     }
 }

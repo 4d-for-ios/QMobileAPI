@@ -14,12 +14,14 @@ let package = Package(
             targets: ["QMobileAPI"]),
     ],
     dependencies: [
+        .package(url: "https://github.com/Alamofire/Alamofire.git", from: "5.0.0-rc.3"),
+        .package(url: "https://github.com/Moya/Moya.git", from: "14.0.0-beta.5"),
         .package(url: "https://github.com/DaveWoodCom/XCGLogger.git", from: "7.0.0"),
     ],
     targets: [
         .target(
             name: "QMobileAPI",
-            dependencies: ["XCGLogger"],
+            dependencies: ["XCGLogger", "Moya", "Alamofire"],
             path: "Sources")
     ]
 )
