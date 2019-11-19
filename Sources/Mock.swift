@@ -169,3 +169,26 @@ extension APIManager {
         return MockCancellable()
     }
 }
+
+// MARK: Action
+
+public struct ActionSheet {
+    public let title: String?
+    public let subtitle: String?
+    public let dismissLabel: String?
+
+    public let actions: [Action]
+
+    public init(title: String? = nil,
+                subtitle: String? = nil,
+                dismissLabel: String? = nil,
+                actions: [Action] = []) {
+        self.title = title
+        self.subtitle = subtitle
+        self.dismissLabel = dismissLabel
+        self.actions = actions
+    }
+}
+public struct Action {
+    public let name: String
+}
