@@ -7,7 +7,7 @@ import Foundation
 import Moya
 
 extension URL {
-    
+
     static let qmobile = URL(string: "http://localhost")!
 }
 
@@ -55,7 +55,7 @@ extension AuthToken {
         }
         return true
     }
-    
+
     public var isExpiredToken: Bool {
         return isValidToken
     }
@@ -113,17 +113,17 @@ public struct JSON {}
 ///  mobileapp/$authenticate/
 public class AuthTarget: TargetType {
     public var baseURL: URL = URL.qmobile
-    
+
     public var path: String = ""
-    
+
     public var method: Moya.Method = .post
-    
+
     public var sampleData: Data = Data()
-    
+
     public var task: Task = .requestPlain
-    
-    public var headers: [String : String]?
-    
+
+    public var headers: [String: String]?
+
     public enum Send: String {
         case link
         case code
@@ -132,7 +132,7 @@ public class AuthTarget: TargetType {
 
 class MockCancellable: Cancellable {
     var isCancelled: Bool  = false
-    
+
     func cancel() {
         isCancelled = true
     }
@@ -160,7 +160,6 @@ extension APIManager {
         return  MockCancellable()
     }
 
-     
     /// Logout using token in headers or passed token.
     public typealias CompletionLogOutHandler = ((Result<Status, APIError>) -> Void)
     open func logout(token: String? = nil,
