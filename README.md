@@ -13,5 +13,5 @@ A mock package totest login form.
 [swift-url]: https://developer.apple.com/swift/
 [build-shield]: https://github.com/4d-for-ios/QMobileAPI/workflows/Build/badge.svg
 [build-url]: https://github.com/4d-for-ios/QMobileAPI/actions?workflow=Build
-[lint-shield]: https://github.com/4d-for-ios/QMobileUI/workflows/Lint/badge.svg
-[lint-url]: https://github.com/4d-for-ios/QMobileUI/actions?workflow=Lint
+[lint-shield]: https://github.com/4d-for-ios/QMobileAPI/workflows/Lint/badge.svg
+[lint-url]: https://github.com/4d-for-ios/QMobileAPI/actions?workflow=Lint
