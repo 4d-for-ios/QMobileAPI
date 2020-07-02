@@ -212,3 +212,16 @@ public struct Attribute {
     /// Attribute name.
     public var name: String
 }
+
+// MARK: Hashable
+extension Table: Hashable {
+    public func hash(into hasher: inout Hasher) {
+        hasher.combine(self.name)
+    }
+}
+
+extension Attribute: Hashable {
+    public func hash(into hasher: inout Hasher) {
+        hasher.combine(self.name)
+    }
+}
