@@ -203,11 +203,13 @@ public struct Table {
     public var attributes: [String: Attribute] = [:]
     public var attributesBySafeName: [String: Attribute] = [:]
 
-    public var keys: [String: Key] = [:]
-
-    public var methods: [TableMethod] = []
-
     public init(name: String) {
         self.name = name
     }
+}
+
+
+public struct Attribute {
+    /// Attribute name.
+    public var name: String
 }
