@@ -192,3 +192,22 @@ public struct ActionSheet {
 public struct Action {
     public let name: String
 }
+
+public struct Table {
+    public var name: String
+    public var className: String?
+    public var collectionName: String?
+    public var scope: String?
+    public var dataURI: String?
+
+    public var attributes: [String: Attribute] = [:]
+    public var attributesBySafeName: [String: Attribute] = [:]
+
+    public var keys: [String: Key] = [:]
+
+    public var methods: [TableMethod] = []
+
+    public init(name: String) {
+        self.name = name
+    }
+}
