@@ -208,7 +208,6 @@ public struct Table {
     }
 }
 
-
 public struct Attribute {
     /// Attribute name.
     public var name: String
