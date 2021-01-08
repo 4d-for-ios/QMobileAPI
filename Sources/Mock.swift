@@ -8,7 +8,7 @@ import Moya
 
 extension URL {
 
-    static let qmobile = URL(string: "http://localhost")!
+    public static let qmobile = URL(string: "http://localhost")!
 }
 
 public class APIManager {
@@ -225,8 +225,3 @@ extension Attribute: Hashable {
         hasher.combine(self.name)
     }
 }
-
-extension URL {
-   public static var qmobile: URL { URL(string: "http://mockserver") }   
-}
-    
