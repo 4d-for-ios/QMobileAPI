@@ -225,3 +225,8 @@ extension Attribute: Hashable {
         hasher.combine(self.name)
     }
 }
+
+extension URL {
+   public static var qmobile: URL { URL(string: "http://mockserver") }   
+}
+    
