@@ -5,6 +5,7 @@
 
 import Foundation
 import Moya
+import SwiftyJSON
 
 extension URL {
 
@@ -107,7 +108,7 @@ public enum APIError: Swift.Error {
     case stringDecodingFailed(Swift.Error)
 }
 
-public struct JSON {}
+public typealias JSON = SwiftyJSON.JSON
 
 // MARK: authentificate
 ///  mobileapp/$authenticate/
