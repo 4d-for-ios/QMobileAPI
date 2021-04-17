@@ -1,0 +1,1703 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>ActionRequest Class Reference</title>
+    <link rel="stylesheet" type="text/css" href="../css/jazzy.css" />
+    <link rel="stylesheet" type="text/css" href="../css/highlight.css" />
+    <meta charset='utf-8'>
+    <script src="../js/jquery.min.js" defer></script>
+    <script src="../js/jazzy.js" defer></script>
+    
+    <script src="../js/lunr.min.js" defer></script>
+    <script src="../js/typeahead.jquery.js" defer></script>
+    <script src="../js/jazzy.search.js" defer></script>
+  </head>
+  <body>
+    <a name="//apple_ref/swift/Class/ActionRequest" class="dashAnchor"></a>
+    <a title="ActionRequest Class Reference"></a>
+    <header>
+      <div class="content-wrapper">
+        <p><a href="../index.html">QMobileAPI 0.1.0 Docs</a> (55% documented)</p>
+        <p class="header-right">
+          <form role="search" action="../search.json">
+            <input type="text" placeholder="Search documentation" data-typeahead>
+          </form>
+        </p>
+      </div>
+    </header>
+    <div class="content-wrapper">
+      <p id="breadcrumbs">
+        <a href="../index.html">QMobileAPI Reference</a>
+        <img id="carat" src="../img/carat.png" />
+        ActionRequest Class Reference
+      </p>
+    </div>
+    <div class="content-wrapper">
+      <nav class="sidebar">
+        <ul class="nav-groups">
+          <li class="nav-group-name">
+            <a href="../Classes.html">Classes</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Classes/APIManager.html">APIManager</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/ActionAbstractTarget.html">ActionAbstractTarget</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/ActionRequest.html">ActionRequest</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/ActionRequest/ActionParametersRootKey.html">– ActionParametersRootKey</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/ActionRequest/State.html">– State</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/ActionRequest/Error.html">– Error</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/ActionRootTarget.html">ActionRootTarget</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/ActionTarget.html">ActionTarget</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/ApplicationInfoTarget.html">ApplicationInfoTarget</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/AttributeValueMapper.html">AttributeValueMapper</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/AuthTarget.html">AuthTarget</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/AuthTarget/Send.html">– Send</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/AuthVerificationTarget.html">AuthVerificationTarget</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/BaseTarget.html">BaseTarget</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/CacheInfoTarget.html">CacheInfoTarget</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/CancellableComposite.html">CancellableComposite</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/CancellableComposite/Mode.html">– Mode</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/CatalogTarget.html">CatalogTarget</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/ComputeTarget.html">ComputeTarget</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/EntitySetInfoTarget.html">EntitySetInfoTarget</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/InfoTarget.html">InfoTarget</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/ItunesAPI.html">ItunesAPI</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/LogOutTarget.html">LogOutTarget</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/OnPublisher.html">OnPublisher</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/PreparePlugin.html">PreparePlugin</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/ProgessInfoTarget.html">ProgessInfoTarget</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/ReceivePlugin.html">ReceivePlugin</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/RecordSetTarget.html">RecordSetTarget</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/RecordTarget.html">RecordTarget</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/RecordsTarget.html">RecordsTarget</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/SessionInfoTarget.html">SessionInfoTarget</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/SessionReleaseTarget.html">SessionReleaseTarget</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/SimpleTarget.html">SimpleTarget</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/StatusTarget.html">StatusTarget</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/TableMethodTarget.html">TableMethodTarget</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/TableTarget.html">TableTarget</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/UploadTarget.html">UploadTarget</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/UserInfoTarget.html">UserInfoTarget</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/WebTestTarget.html">WebTestTarget</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Enums.html">Enumerations</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Enums/APIError.html">APIError</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/APIError/RequestCase.html">– RequestCase</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/ActionParameterFormat.html">ActionParameterFormat</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/ActionParameterRule.html">ActionParameterRule</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/ActionParameterType.html">ActionParameterType</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/ActionStyle.html">ActionStyle</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/AttributeKind.html">AttributeKind</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/AttributeScope.html">AttributeScope</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/AttributeStorageType.html">AttributeStorageType</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/ComputeOperation.html">ComputeOperation</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/DeviceError.html">DeviceError</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/HTTPCode.html">HTTPCode</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/HTTPRequestHeader.html">HTTPRequestHeader</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/HTTPResponseHeader.html">HTTPResponseHeader</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/ImageFormat.html">ImageFormat</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/ItunesTarget.html">ItunesTarget</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/Method.html">Method</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/OrderBy.html">OrderBy</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/RecordsRequestKey.html">RecordsRequestKey</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/RestErrorCode.html">RestErrorCode</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Extensions.html">Extensions</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Extensions/AFError.html">AFError</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/AnyPublisher.html">AnyPublisher</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/Array.html">Array</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/Bundle.html">Bundle</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/Date.html">Date</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/DateFormatter.html">DateFormatter</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/Decodable.html">Decodable</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/Device.html">Device</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/Dictionary.html">Dictionary</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions.html#/s:8Dispatch0A8WorkItemC">DispatchWorkItem</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/Double.html">Double</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/Encodable.html">Encodable</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/Float.html">Float</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/Future.html">Future</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/Int.html">Int</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/JSON.html">JSON</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/MoyaError.html">MoyaError</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/MoyaProvider.html">MoyaProvider</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/MultipartFormData.html">MultipartFormData</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/MultipartFormData/FormDataProvider.html">– FormDataProvider</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/NetworkReachabilityStatus.html">NetworkReachabilityStatus</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/Optional.html">Optional</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/Prephirences.html">Prephirences</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/Publisher.html">Publisher</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/Response.html">Response</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/Result.html">Result</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/Sequence.html">Sequence</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/String.html">String</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/Swift.html">Swift</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/Swift/Error.html">– Error</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/TargetType.html">TargetType</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/UIDevice.html">UIDevice</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/URL.html">URL</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/URLError.html">URLError</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Functions.html">Functions</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Functions.html#/s:10QMobileAPI1nopyAA9AttributeV6FilterCAFF">!(_:)</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Functions.html#/s:10QMobileAPI2neoiyAA9AttributeV6FilterCAD_yptF">!=(_:_:)</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Functions.html#/s:10QMobileAPI2neoiyAA9AttributeV6FilterCAF10ExpressionC_AHtF">!=(_:_:)</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Functions.html#/s:10QMobileAPI2neoiyAA9AttributeV6FilterCAF10ExpressionC_yptF">!=(_:_:)</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Functions.html#/s:10QMobileAPI2aaoiyAA9AttributeV6FilterCAF_AFtF">&amp;&amp;(_:_:)</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Functions.html#/s:10QMobileAPI1loiyAA9AttributeV6FilterCAD_yptF">&lt;(_:_:)</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Functions.html#/s:10QMobileAPI1loiyAA9AttributeV6FilterCAF10ExpressionC_AHtF">&lt;(_:_:)</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Functions.html#/s:10QMobileAPI1loiyAA9AttributeV6FilterCAF10ExpressionC_yptF">&lt;(_:_:)</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Functions.html#/s:10QMobileAPI2leoiyAA9AttributeV6FilterCAD_yptF">&lt;=(_:_:)</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Functions.html#/s:10QMobileAPI2leoiyAA9AttributeV6FilterCAF10ExpressionC_AHtF">&lt;=(_:_:)</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Functions.html#/s:10QMobileAPI2leoiyAA9AttributeV6FilterCAF10ExpressionC_yptF">&lt;=(_:_:)</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Functions.html#/s:10QMobileAPI2eeoiyAA9AttributeV6FilterCAD_yptF">==(_:_:)</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Functions.html#/s:10QMobileAPI2eeoiyAA9AttributeV6FilterCAF10ExpressionC_AHtF">==(_:_:)</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Functions.html#/s:10QMobileAPI2eeoiyAA9AttributeV6FilterCAF10ExpressionC_yptF">==(_:_:)</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Functions.html#/s:10QMobileAPI1goiyAA9AttributeV6FilterCAD_yptF">&gt;(_:_:)</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Functions.html#/s:10QMobileAPI1goiyAA9AttributeV6FilterCAF10ExpressionC_AHtF">&gt;(_:_:)</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Functions.html#/s:10QMobileAPI1goiyAA9AttributeV6FilterCAF10ExpressionC_yptF">&gt;(_:_:)</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Functions.html#/s:10QMobileAPI2geoiyAA9AttributeV6FilterCAD_yptF">&gt;=(_:_:)</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Functions.html#/s:10QMobileAPI2geoiyAA9AttributeV6FilterCAF10ExpressionC_AHtF">&gt;=(_:_:)</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Functions.html#/s:10QMobileAPI2geoiyAA9AttributeV6FilterCAF10ExpressionC_yptF">&gt;=(_:_:)</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Functions.html#/s:10QMobileAPI2oooiyAA9AttributeV6FilterCAF_AFtF">||(_:_:)</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Protocols.html">Protocols</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Protocols/APIManagerDelegate.html">APIManagerDelegate</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/ActionParameterEncodable.html">ActionParameterEncodable</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/AttributeType.html">AttributeType</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/DecodableTargetType.html">DecodableTargetType</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/DictionaryConvertible.html">DictionaryConvertible</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/Emptyable.html">Emptyable</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/EntitySetIdConvertible.html">EntitySetIdConvertible</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/ErrorConvertible.html">ErrorConvertible</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/ErrorWithCause.html">ErrorWithCause</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/ImportableBuilder.html">ImportableBuilder</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/IsMultipleOf.html">IsMultipleOf</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/JSONDecodable.html">JSONDecodable</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/JSONEncodable.html">JSONEncodable</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/Lockable.html">Lockable</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/LockableBySemaphore.html">LockableBySemaphore</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/LockableBySync.html">LockableBySync</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/RecordImportable.html">RecordImportable</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/RecordsRequest.html">RecordsRequest</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/RecordsTargetType.html">RecordsTargetType</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/Retryable.html">Retryable</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/StubDelegate.html">StubDelegate</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/TimeoutTarget.html">TimeoutTarget</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/VeryCodable.html">VeryCodable</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Structs.html">Structures</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Structs/Action.html">Action</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/ActionParameter.html">ActionParameter</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/ActionParametersKey.html">ActionParametersKey</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/ActionResult.html">ActionResult</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/ActionSheet.html">ActionSheet</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/AnyCodable.html">AnyCodable</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/AnyDecodable.html">AnyDecodable</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/AnyEncodable.html">AnyEncodable</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/ApplicationInfo.html">ApplicationInfo</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/Attribute.html">Attribute</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/Attribute/Filter.html">– Filter</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/Attribute/Comparator.html">– Comparator</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/Attribute/ComparisonFilter.html">– ComparisonFilter</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/Attribute/Conjunction.html">– Conjunction</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/Attribute/CompoundFilter.html">– CompoundFilter</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/AttributeNameTransformer.html">AttributeNameTransformer</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/AttributeRelativeType.html">AttributeRelativeType</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/AuthToken.html">AuthToken</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/CacheInfo.html">CacheInfo</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/CacheObject.html">CacheObject</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/CacheObjects.html">CacheObjects</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/Catalog.html">Catalog</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/ClassStore.html">ClassStore</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/Compute.html">Compute</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/Deferred.html">Deferred</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/DeletedRecord.html">DeletedRecord</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/DeletedRecordKey.html">DeletedRecordKey</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/EntitySet.html">EntitySet</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/EntitySetInfo.html">EntitySetInfo</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/ImportableParser.html">ImportableParser</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/ImportableParser/Error.html">– Error</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/Info.html">Info</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/ItunesLookup.html">ItunesLookup</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/ItunesLookupItem.html">ItunesLookupItem</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/Key.html">Key</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/Page.html">Page</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/PageInfo.html">PageInfo</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/ProgressInfo.html">ProgressInfo</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/RecordJSON.html">RecordJSON</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/RestError.html">RestError</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/RestErrors.html">RestErrors</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/RestKey.html">RestKey</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/Retry.html">Retry</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/SemVersion.html">SemVersion</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/ServerVersion.html">ServerVersion</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/SessionInfo.html">SessionInfo</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/Status.html">Status</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/StringDictContainer.html">StringDictContainer</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/Table.html">Table</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/TableMethod.html">TableMethod</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/UploadResult.html">UploadResult</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/UploadUpdate.html">UploadUpdate</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/UserInfoResult.html">UserInfoResult</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/WebTestInfo.html">WebTestInfo</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Typealiases.html">Type Aliases</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Typealiases.html#/s:10QMobileAPI16ActionParametersa">ActionParameters</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Typealiases.html#/s:10QMobileAPI17ComputeResultTypea">ComputeResultType</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Typealiases.html#/s:10QMobileAPI6Devicea">Device</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Typealiases.html#/s:10QMobileAPI9ImportKeya">ImportKey</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Typealiases.html#/s:10QMobileAPI4JSONa">JSON</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Typealiases.html#/s:10QMobileAPI11JSONCodablea">JSONCodable</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Typealiases.html#/s:10QMobileAPI9JSONErrora">JSONError</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Typealiases.html#/s:10QMobileAPI8LogLevela">LogLevel</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Typealiases.html#/s:10QMobileAPI26NetworkReachabilityManagera">NetworkReachabilityManager</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Typealiases.html#/s:10QMobileAPI25NetworkReachabilityStatusa">NetworkReachabilityStatus</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Typealiases.html#/s:10QMobileAPI7URLPatha">URLPath</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      <article class="main-content">
+        <section>
+          <section class="section">
+            <h1>ActionRequest</h1>
+              <div class="declaration">
+                <div class="language">
+                  
+                  <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">final</span> <span class="kd">class</span> <span class="kt">ActionRequest</span></code></pre>
+<pre class="highlight swift"><code><span class="kd">extension</span> <span class="kt">ActionRequest</span><span class="p">:</span> <span class="kt">CustomStringConvertible</span></code></pre>
+<pre class="highlight swift"><code><span class="kd">extension</span> <span class="kt">ActionRequest</span><span class="p">:</span> <span class="kt">ObservableObject</span></code></pre>
+<pre class="highlight swift"><code><span class="kd">extension</span> <span class="kt">ActionRequest</span><span class="p">:</span> <span class="kt">Codable</span></code></pre>
+<pre class="highlight swift"><code><span class="kd">extension</span> <span class="kt">ActionRequest</span><span class="p">:</span> <span class="kt">Equatable</span></code></pre>
+
+                </div>
+              </div>
+            <p>Represent a mobile action sent 4D server.</p>
+
+          </section>
+          <section class="section task-group-section">
+            <div class="task-group">
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:10QMobileAPI13ActionRequestC0C17ParametersRootKeyO"></a>
+                    <a name="//apple_ref/swift/Enum/ActionParametersRootKey" class="dashAnchor"></a>
+                    <a class="token" href="#/s:10QMobileAPI13ActionRequestC0C17ParametersRootKeyO">ActionParametersRootKey</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                        <a href="../Classes/ActionRequest/ActionParametersRootKey.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">enum</span> <span class="kt">ActionParametersRootKey</span> <span class="p">:</span> <span class="kt">String</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:10QMobileAPI13ActionRequestC5StateO"></a>
+                    <a name="//apple_ref/swift/Enum/State" class="dashAnchor"></a>
+                    <a class="token" href="#/s:10QMobileAPI13ActionRequestC5StateO">State</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                        <a href="../Classes/ActionRequest/State.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">enum</span> <span class="kt">State</span> <span class="p">:</span> <span class="kt">String</span><span class="p">,</span> <span class="kt">Codable</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:10QMobileAPI13ActionRequestC5ErrorV"></a>
+                    <a name="//apple_ref/swift/Struct/Error" class="dashAnchor"></a>
+                    <a class="token" href="#/s:10QMobileAPI13ActionRequestC5ErrorV">Error</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                        <a href="../Classes/ActionRequest/Error.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">Error</span> <span class="p">:</span> <span class="kt">Swift</span><span class="o">.</span><span class="kt">Error</span><span class="p">,</span> <span class="kt">Codable</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/properties"></a>
+                <a name="//apple_ref/swift/Section/properties" class="dashAnchor"></a>
+                <div class="section-name-container">
+                  <a class="section-name-link" href="#/properties"></a>
+                  <h3 class="section-name"><p>properties</p>
+</h3>
+                </div>
+              </div>
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:10QMobileAPI13ActionRequestC6actionAA0C0Vvp"></a>
+                    <a name="//apple_ref/swift/Property/action" class="dashAnchor"></a>
+                    <a class="token" href="#/s:10QMobileAPI13ActionRequestC6actionAA0C0Vvp">action</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The action to request.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">action</span><span class="p">:</span> <span class="kt"><a href="../Structs/Action.html">Action</a></span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:10QMobileAPI13ActionRequestC10parametersSDySSypGvp"></a>
+                    <a name="//apple_ref/swift/Property/parameters" class="dashAnchor"></a>
+                    <a class="token" href="#/s:10QMobileAPI13ActionRequestC10parametersSDySSypGvp">parameters</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>All parameters</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd"><a href="../Structs/StringDictContainer.html">@StringDictContainer</a></span>
+<span class="kd">public</span> <span class="k">var</span> <span class="nv">parameters</span><span class="p">:</span> <span class="kt"><a href="../Typealiases.html#/s:10QMobileAPI16ActionParametersa">ActionParameters</a></span> <span class="p">{</span> <span class="k">get</span> <span class="k">set</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:10QMobileAPI13ActionRequestC5stateAC5StateOvp"></a>
+                    <a name="//apple_ref/swift/Property/state" class="dashAnchor"></a>
+                    <a class="token" href="#/s:10QMobileAPI13ActionRequestC5stateAC5StateOvp">state</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The request state.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">state</span><span class="p">:</span> <span class="kt">ActionRequest</span><span class="o">.</span><span class="kt"><a href="../Classes/ActionRequest/State.html">State</a></span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:10QMobileAPI13ActionRequestC12creationDate10Foundation0F0Vvp"></a>
+                    <a name="//apple_ref/swift/Property/creationDate" class="dashAnchor"></a>
+                    <a class="token" href="#/s:10QMobileAPI13ActionRequestC12creationDate10Foundation0F0Vvp">creationDate</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Creation of request.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">creationDate</span><span class="p">:</span> <span class="kt">Date</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:10QMobileAPI13ActionRequestC8lastDate10Foundation0F0VSgvp"></a>
+                    <a name="//apple_ref/swift/Property/lastDate" class="dashAnchor"></a>
+                    <a class="token" href="#/s:10QMobileAPI13ActionRequestC8lastDate10Foundation0F0VSgvp">lastDate</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Final execution date.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">lastDate</span><span class="p">:</span> <span class="kt">Date</span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:10QMobileAPI13ActionRequestC6results6ResultOyAA0cF0VAC5ErrorVGSgvp"></a>
+                    <a name="//apple_ref/swift/Property/result" class="dashAnchor"></a>
+                    <a class="token" href="#/s:10QMobileAPI13ActionRequestC6results6ResultOyAA0cF0VAC5ErrorVGSgvp">result</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The result, when has been executed</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">result</span><span class="p">:</span> <span class="kt">Result</span><span class="o">&lt;</span><span class="kt"><a href="../Structs/ActionResult.html">ActionResult</a></span><span class="p">,</span> <span class="kt">ActionRequest</span><span class="o">.</span><span class="kt"><a href="../Classes/ActionRequest/Error.html">Error</a></span><span class="o">&gt;</span><span class="p">?</span> <span class="p">{</span> <span class="k">get</span> <span class="k">set</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:10QMobileAPI13ActionRequestC8tryCountSivp"></a>
+                    <a name="//apple_ref/swift/Property/tryCount" class="dashAnchor"></a>
+                    <a class="token" href="#/s:10QMobileAPI13ActionRequestC8tryCountSivp">tryCount</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Try count</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">tryCount</span><span class="p">:</span> <span class="kt">Int</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/computed%20properies"></a>
+                <a name="//apple_ref/swift/Section/computed properies" class="dashAnchor"></a>
+                <div class="section-name-container">
+                  <a class="section-name-link" href="#/computed%20properies"></a>
+                  <h3 class="section-name"><p>computed properies</p>
+</h3>
+                </div>
+              </div>
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:10QMobileAPI13ActionRequestC2idSSvp"></a>
+                    <a name="//apple_ref/swift/Property/id" class="dashAnchor"></a>
+                    <a class="token" href="#/s:10QMobileAPI13ActionRequestC2idSSvp">id</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Unique id.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">id</span><span class="p">:</span> <span class="kt">String</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:10QMobileAPI13ActionRequestC16actionParametersSDySSypGSgvp"></a>
+                    <a name="//apple_ref/swift/Property/actionParameters" class="dashAnchor"></a>
+                    <a class="token" href="#/s:10QMobileAPI13ActionRequestC16actionParametersSDySSypGSgvp">actionParameters</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Parameters value for the actions.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">actionParameters</span><span class="p">:</span> <span class="kt"><a href="../Typealiases.html#/s:10QMobileAPI16ActionParametersa">ActionParameters</a></span><span class="p">?</span> <span class="p">{</span> <span class="k">get</span> <span class="k">set</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:10QMobileAPI13ActionRequestC03setC10Parameters3key5valueySS_yptF"></a>
+                    <a name="//apple_ref/swift/Method/setActionParameters(key:value:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:10QMobileAPI13ActionRequestC03setC10Parameters3key5valueySS_yptF">setActionParameters(key:<wbr>value:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Set an action parameter value.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">setActionParameters</span><span class="p">(</span><span class="nv">key</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span> <span class="nv">value</span><span class="p">:</span> <span class="kt">Any</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:10QMobileAPI13ActionRequestC06removeC10Parameters3keyySS_tF"></a>
+                    <a name="//apple_ref/swift/Method/removeActionParameters(key:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:10QMobileAPI13ActionRequestC06removeC10Parameters3keyySS_tF">removeActionParameters(key:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Remove an action parameter value.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">removeActionParameters</span><span class="p">(</span><span class="nv">key</span><span class="p">:</span> <span class="kt">String</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:10QMobileAPI13ActionRequestC17contextParametersSDySSypGSgvp"></a>
+                    <a name="//apple_ref/swift/Property/contextParameters" class="dashAnchor"></a>
+                    <a class="token" href="#/s:10QMobileAPI13ActionRequestC17contextParametersSDySSypGSgvp">contextParameters</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Context of action executions (ie. record, table, &hellip;)</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">contextParameters</span><span class="p">:</span> <span class="kt"><a href="../Typealiases.html#/s:10QMobileAPI16ActionParametersa">ActionParameters</a></span><span class="p">?</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:10QMobileAPI13ActionRequestC18metadataParametersSDySSypGSgvp"></a>
+                    <a name="//apple_ref/swift/Property/metadataParameters" class="dashAnchor"></a>
+                    <a class="token" href="#/s:10QMobileAPI13ActionRequestC18metadataParametersSDySSypGSgvp">metadataParameters</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Meta data of action (for instance to ask server to convert JSON data to Date or Picture)</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">metadataParameters</span><span class="p">:</span> <span class="kt"><a href="../Typealiases.html#/s:10QMobileAPI16ActionParametersa">ActionParameters</a></span><span class="p">?</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:10QMobileAPI13ActionRequestC10statusTextSSSgvp"></a>
+                    <a name="//apple_ref/swift/Property/statusText" class="dashAnchor"></a>
+                    <a class="token" href="#/s:10QMobileAPI13ActionRequestC10statusTextSSSgvp">statusText</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Return the result status text if task finish and have status text from server.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">statusText</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:10QMobileAPI13ActionRequestC9tableNameSSvp"></a>
+                    <a name="//apple_ref/swift/Property/tableName" class="dashAnchor"></a>
+                    <a class="token" href="#/s:10QMobileAPI13ActionRequestC9tableNameSSvp">tableName</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Return the table name from context.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">tableName</span><span class="p">:</span> <span class="kt">String</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:10QMobileAPI13ActionRequestC13recordSummarySSvp"></a>
+                    <a name="//apple_ref/swift/Property/recordSummary" class="dashAnchor"></a>
+                    <a class="token" href="#/s:10QMobileAPI13ActionRequestC13recordSummarySSvp">recordSummary</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Compute a summary information of record (ie. primary id)</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">recordSummary</span><span class="p">:</span> <span class="kt">String</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:10QMobileAPI13ActionRequestC9isSuccessSbvp"></a>
+                    <a name="//apple_ref/swift/Property/isSuccess" class="dashAnchor"></a>
+                    <a class="token" href="#/s:10QMobileAPI13ActionRequestC9isSuccessSbvp">isSuccess</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Return true if the action has been  executed and is success.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">isSuccess</span><span class="p">:</span> <span class="kt">Bool</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:10QMobileAPI13ActionRequestC11isCompletedSbvp"></a>
+                    <a name="//apple_ref/swift/Property/isCompleted" class="dashAnchor"></a>
+                    <a class="token" href="#/s:10QMobileAPI13ActionRequestC11isCompletedSbvp">isCompleted</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Return true if action has been executed without error.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">isCompleted</span><span class="p">:</span> <span class="kt">Bool</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:10QMobileAPI13ActionRequestC9hasResultSbvp"></a>
+                    <a name="//apple_ref/swift/Property/hasResult" class="dashAnchor"></a>
+                    <a class="token" href="#/s:10QMobileAPI13ActionRequestC9hasResultSbvp">hasResult</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Has receive result.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">hasResult</span><span class="p">:</span> <span class="kt">Bool</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:10QMobileAPI13ActionRequestC12actionResultAA0cF0VSgvp"></a>
+                    <a name="//apple_ref/swift/Property/actionResult" class="dashAnchor"></a>
+                    <a class="token" href="#/s:10QMobileAPI13ActionRequestC12actionResultAA0cF0VSgvp">actionResult</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The action result if any (ie. have result and no error.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">actionResult</span><span class="p">:</span> <span class="kt"><a href="../Structs/ActionResult.html">ActionResult</a></span><span class="p">?</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:10QMobileAPI13ActionRequestC10generateIDySSAA0C0VFZ"></a>
+                    <a name="//apple_ref/swift/Method/generateID(_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:10QMobileAPI13ActionRequestC10generateIDySSAA0C0VFZ">generateID(_:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Generate an ir for action.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="kd">func</span> <span class="nf">generateID</span><span class="p">(</span><span class="n">_</span> <span class="nv">action</span><span class="p">:</span> <span class="kt"><a href="../Structs/Action.html">Action</a></span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">String</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/init"></a>
+                <a name="//apple_ref/swift/Section/init" class="dashAnchor"></a>
+                <div class="section-name-container">
+                  <a class="section-name-link" href="#/init"></a>
+                  <h3 class="section-name"><p>init</p>
+</h3>
+                </div>
+              </div>
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:10QMobileAPI13ActionRequestC6action0E10Parameters07contextF02id5state6resultAcA0C0V_SDySSypGSgAMSSAC5StateOSgs6ResultOyAA0cL0VAA8APIErrorOGSgtcfc"></a>
+                    <a name="//apple_ref/swift/Method/init(action:actionParameters:contextParameters:id:state:result:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:10QMobileAPI13ActionRequestC6action0E10Parameters07contextF02id5state6resultAcA0C0V_SDySSypGSgAMSSAC5StateOSgs6ResultOyAA0cL0VAA8APIErrorOGSgtcfc">init(action:<wbr>actionParameters:<wbr>contextParameters:<wbr>id:<wbr>state:<wbr>result:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Create a new action request with action and context parameters</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="n">convenience</span> <span class="nf">init</span><span class="p">(</span>
+    <span class="nv">action</span><span class="p">:</span> <span class="kt"><a href="../Structs/Action.html">Action</a></span><span class="p">,</span>
+    <span class="nv">actionParameters</span><span class="p">:</span> <span class="kt"><a href="../Typealiases.html#/s:10QMobileAPI16ActionParametersa">ActionParameters</a></span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span>
+    <span class="nv">contextParameters</span><span class="p">:</span> <span class="kt"><a href="../Typealiases.html#/s:10QMobileAPI16ActionParametersa">ActionParameters</a></span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span>
+    <span class="nv">id</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span>
+    <span class="nv">state</span><span class="p">:</span> <span class="kt">ActionRequest</span><span class="o">.</span><span class="kt"><a href="../Classes/ActionRequest/State.html">State</a></span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span>
+    <span class="nv">result</span><span class="p">:</span> <span class="kt">Result</span><span class="o">&lt;</span><span class="kt"><a href="../Structs/ActionResult.html">ActionResult</a></span><span class="p">,</span> <span class="kt"><a href="../Enums/APIError.html">APIError</a></span><span class="o">&gt;</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:10QMobileAPI13ActionRequestC6action10parameters5state6resultAcA0C0V_SDySSypGSgAC5StateOSgs6ResultOyAA0cJ0VAA8APIErrorOGSgtcfc"></a>
+                    <a name="//apple_ref/swift/Method/init(action:parameters:state:result:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:10QMobileAPI13ActionRequestC6action10parameters5state6resultAcA0C0V_SDySSypGSgAC5StateOSgs6ResultOyAA0cJ0VAA8APIErrorOGSgtcfc">init(action:<wbr>parameters:<wbr>state:<wbr>result:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Create a new action request with raw attributes</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="nf">init</span><span class="p">(</span><span class="nv">action</span><span class="p">:</span> <span class="kt"><a href="../Structs/Action.html">Action</a></span><span class="p">,</span> <span class="nv">parameters</span><span class="p">:</span> <span class="kt"><a href="../Typealiases.html#/s:10QMobileAPI16ActionParametersa">ActionParameters</a></span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">state</span><span class="p">:</span> <span class="kt">ActionRequest</span><span class="o">.</span><span class="kt"><a href="../Classes/ActionRequest/State.html">State</a></span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">result</span><span class="p">:</span> <span class="kt">Result</span><span class="o">&lt;</span><span class="kt"><a href="../Structs/ActionResult.html">ActionResult</a></span><span class="p">,</span> <span class="kt"><a href="../Enums/APIError.html">APIError</a></span><span class="o">&gt;</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/methods"></a>
+                <a name="//apple_ref/swift/Section/methods" class="dashAnchor"></a>
+                <div class="section-name-container">
+                  <a class="section-name-link" href="#/methods"></a>
+                  <h3 class="section-name"><p>methods</p>
+</h3>
+                </div>
+              </div>
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:10QMobileAPI13ActionRequestC11resetResultyyF"></a>
+                    <a name="//apple_ref/swift/Method/resetResult()" class="dashAnchor"></a>
+                    <a class="token" href="#/s:10QMobileAPI13ActionRequestC11resetResultyyF">resetResult()</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Reset result ie. set no nil.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">resetResult</span><span class="p">()</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:10QMobileAPI13ActionRequestC16encodeParametersyyF"></a>
+                    <a name="//apple_ref/swift/Method/encodeParameters()" class="dashAnchor"></a>
+                    <a class="token" href="#/s:10QMobileAPI13ActionRequestC16encodeParametersyyF">encodeParameters()</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Encode current parmeters for request.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">encodeParameters</span><span class="p">()</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:10QMobileAPI13ActionRequestC16decodeParametersyyF"></a>
+                    <a name="//apple_ref/swift/Method/decodeParameters()" class="dashAnchor"></a>
+                    <a class="token" href="#/s:10QMobileAPI13ActionRequestC16decodeParametersyyF">decodeParameters()</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Decode current parametes for request.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">decodeParameters</span><span class="p">()</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/protocol%20implementation"></a>
+                <a name="//apple_ref/swift/Section/protocol implementation" class="dashAnchor"></a>
+                <div class="section-name-container">
+                  <a class="section-name-link" href="#/protocol%20implementation"></a>
+                  <h3 class="section-name"><p>protocol implementation</p>
+</h3>
+                </div>
+              </div>
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:s23CustomStringConvertibleP11descriptionSSvp"></a>
+                    <a name="//apple_ref/swift/Property/description" class="dashAnchor"></a>
+                    <a class="token" href="#/s:s23CustomStringConvertibleP11descriptionSSvp">description</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">description</span><span class="p">:</span> <span class="kt">String</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:Se4fromxs7Decoder_p_tKcfc"></a>
+                    <a name="//apple_ref/swift/Method/init(from:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:Se4fromxs7Decoder_p_tKcfc">init(from:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="n">convenience</span> <span class="nf">init</span><span class="p">(</span><span class="n">from</span> <span class="nv">decoder</span><span class="p">:</span> <span class="kt">Decoder</span><span class="p">)</span> <span class="k">throws</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:SE6encode2toys7Encoder_p_tKF"></a>
+                    <a name="//apple_ref/swift/Method/encode(to:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:SE6encode2toys7Encoder_p_tKF">encode(to:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">encode</span><span class="p">(</span><span class="n">to</span> <span class="nv">encoder</span><span class="p">:</span> <span class="kt">Encoder</span><span class="p">)</span> <span class="k">throws</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:SQ2eeoiySbx_xtFZ"></a>
+                    <a name="//apple_ref/swift/Method/==(_:_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:SQ2eeoiySbx_xtFZ">==(_:<wbr>_:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="kd">func</span> <span class="o">==</span> <span class="p">(</span><span class="nv">lhs</span><span class="p">:</span> <span class="kt">ActionRequest</span><span class="p">,</span> <span class="nv">rhs</span><span class="p">:</span> <span class="kt">ActionRequest</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Bool</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:10QMobileAPI13ActionRequestC4hash4intoys6HasherVz_tF"></a>
+                    <a name="//apple_ref/swift/Method/hash(into:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:10QMobileAPI13ActionRequestC4hash4intoys6HasherVz_tF">hash(into:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">hash</span><span class="p">(</span><span class="n">into</span> <span class="nv">hasher</span><span class="p">:</span> <span class="k">inout</span> <span class="kt">Hasher</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </section>
+        </section>
+        <section id="footer">
+          <p>&copy; 2021 <a class="link" href="https://project.wakanda.org/issues/88964" target="_blank" rel="external">Eric Marchand</a>. All rights reserved. (Last updated: 2021-04-17)</p>
+          <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.13.6</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
+        </section>
+      </article>
+    </div>
+  </body>
+</div>
+</html>

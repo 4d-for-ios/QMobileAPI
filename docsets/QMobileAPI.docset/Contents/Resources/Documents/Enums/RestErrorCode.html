@@ -1,0 +1,1817 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>RestErrorCode Enumeration Reference</title>
+    <link rel="stylesheet" type="text/css" href="../css/jazzy.css" />
+    <link rel="stylesheet" type="text/css" href="../css/highlight.css" />
+    <meta charset='utf-8'>
+    <script src="../js/jquery.min.js" defer></script>
+    <script src="../js/jazzy.js" defer></script>
+    
+    <script src="../js/lunr.min.js" defer></script>
+    <script src="../js/typeahead.jquery.js" defer></script>
+    <script src="../js/jazzy.search.js" defer></script>
+  </head>
+  <body>
+    <a name="//apple_ref/swift/Enum/RestErrorCode" class="dashAnchor"></a>
+    <a title="RestErrorCode Enumeration Reference"></a>
+    <header>
+      <div class="content-wrapper">
+        <p><a href="../index.html">QMobileAPI 0.1.0 Docs</a> (55% documented)</p>
+        <p class="header-right">
+          <form role="search" action="../search.json">
+            <input type="text" placeholder="Search documentation" data-typeahead>
+          </form>
+        </p>
+      </div>
+    </header>
+    <div class="content-wrapper">
+      <p id="breadcrumbs">
+        <a href="../index.html">QMobileAPI Reference</a>
+        <img id="carat" src="../img/carat.png" />
+        RestErrorCode Enumeration Reference
+      </p>
+    </div>
+    <div class="content-wrapper">
+      <nav class="sidebar">
+        <ul class="nav-groups">
+          <li class="nav-group-name">
+            <a href="../Classes.html">Classes</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Classes/APIManager.html">APIManager</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/ActionAbstractTarget.html">ActionAbstractTarget</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/ActionRequest.html">ActionRequest</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/ActionRequest/ActionParametersRootKey.html">– ActionParametersRootKey</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/ActionRequest/State.html">– State</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/ActionRequest/Error.html">– Error</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/ActionRootTarget.html">ActionRootTarget</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/ActionTarget.html">ActionTarget</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/ApplicationInfoTarget.html">ApplicationInfoTarget</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/AttributeValueMapper.html">AttributeValueMapper</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/AuthTarget.html">AuthTarget</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/AuthTarget/Send.html">– Send</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/AuthVerificationTarget.html">AuthVerificationTarget</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/BaseTarget.html">BaseTarget</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/CacheInfoTarget.html">CacheInfoTarget</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/CancellableComposite.html">CancellableComposite</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/CancellableComposite/Mode.html">– Mode</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/CatalogTarget.html">CatalogTarget</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/ComputeTarget.html">ComputeTarget</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/EntitySetInfoTarget.html">EntitySetInfoTarget</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/InfoTarget.html">InfoTarget</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/ItunesAPI.html">ItunesAPI</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/LogOutTarget.html">LogOutTarget</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/OnPublisher.html">OnPublisher</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/PreparePlugin.html">PreparePlugin</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/ProgessInfoTarget.html">ProgessInfoTarget</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/ReceivePlugin.html">ReceivePlugin</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/RecordSetTarget.html">RecordSetTarget</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/RecordTarget.html">RecordTarget</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/RecordsTarget.html">RecordsTarget</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/SessionInfoTarget.html">SessionInfoTarget</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/SessionReleaseTarget.html">SessionReleaseTarget</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/SimpleTarget.html">SimpleTarget</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/StatusTarget.html">StatusTarget</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/TableMethodTarget.html">TableMethodTarget</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/TableTarget.html">TableTarget</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/UploadTarget.html">UploadTarget</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/UserInfoTarget.html">UserInfoTarget</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/WebTestTarget.html">WebTestTarget</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Enums.html">Enumerations</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Enums/APIError.html">APIError</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/APIError/RequestCase.html">– RequestCase</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/ActionParameterFormat.html">ActionParameterFormat</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/ActionParameterRule.html">ActionParameterRule</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/ActionParameterType.html">ActionParameterType</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/ActionStyle.html">ActionStyle</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/AttributeKind.html">AttributeKind</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/AttributeScope.html">AttributeScope</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/AttributeStorageType.html">AttributeStorageType</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/ComputeOperation.html">ComputeOperation</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/DeviceError.html">DeviceError</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/HTTPCode.html">HTTPCode</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/HTTPRequestHeader.html">HTTPRequestHeader</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/HTTPResponseHeader.html">HTTPResponseHeader</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/ImageFormat.html">ImageFormat</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/ItunesTarget.html">ItunesTarget</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/Method.html">Method</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/OrderBy.html">OrderBy</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/RecordsRequestKey.html">RecordsRequestKey</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/RestErrorCode.html">RestErrorCode</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Extensions.html">Extensions</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Extensions/AFError.html">AFError</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/AnyPublisher.html">AnyPublisher</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/Array.html">Array</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/Bundle.html">Bundle</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/Date.html">Date</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/DateFormatter.html">DateFormatter</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/Decodable.html">Decodable</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/Device.html">Device</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/Dictionary.html">Dictionary</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions.html#/s:8Dispatch0A8WorkItemC">DispatchWorkItem</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/Double.html">Double</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/Encodable.html">Encodable</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/Float.html">Float</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/Future.html">Future</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/Int.html">Int</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/JSON.html">JSON</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/MoyaError.html">MoyaError</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/MoyaProvider.html">MoyaProvider</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/MultipartFormData.html">MultipartFormData</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/MultipartFormData/FormDataProvider.html">– FormDataProvider</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/NetworkReachabilityStatus.html">NetworkReachabilityStatus</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/Optional.html">Optional</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/Prephirences.html">Prephirences</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/Publisher.html">Publisher</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/Response.html">Response</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/Result.html">Result</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/Sequence.html">Sequence</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/String.html">String</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/Swift.html">Swift</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/Swift/Error.html">– Error</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/TargetType.html">TargetType</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/UIDevice.html">UIDevice</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/URL.html">URL</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/URLError.html">URLError</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Functions.html">Functions</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Functions.html#/s:10QMobileAPI1nopyAA9AttributeV6FilterCAFF">!(_:)</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Functions.html#/s:10QMobileAPI2neoiyAA9AttributeV6FilterCAD_yptF">!=(_:_:)</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Functions.html#/s:10QMobileAPI2neoiyAA9AttributeV6FilterCAF10ExpressionC_AHtF">!=(_:_:)</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Functions.html#/s:10QMobileAPI2neoiyAA9AttributeV6FilterCAF10ExpressionC_yptF">!=(_:_:)</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Functions.html#/s:10QMobileAPI2aaoiyAA9AttributeV6FilterCAF_AFtF">&amp;&amp;(_:_:)</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Functions.html#/s:10QMobileAPI1loiyAA9AttributeV6FilterCAD_yptF">&lt;(_:_:)</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Functions.html#/s:10QMobileAPI1loiyAA9AttributeV6FilterCAF10ExpressionC_AHtF">&lt;(_:_:)</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Functions.html#/s:10QMobileAPI1loiyAA9AttributeV6FilterCAF10ExpressionC_yptF">&lt;(_:_:)</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Functions.html#/s:10QMobileAPI2leoiyAA9AttributeV6FilterCAD_yptF">&lt;=(_:_:)</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Functions.html#/s:10QMobileAPI2leoiyAA9AttributeV6FilterCAF10ExpressionC_AHtF">&lt;=(_:_:)</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Functions.html#/s:10QMobileAPI2leoiyAA9AttributeV6FilterCAF10ExpressionC_yptF">&lt;=(_:_:)</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Functions.html#/s:10QMobileAPI2eeoiyAA9AttributeV6FilterCAD_yptF">==(_:_:)</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Functions.html#/s:10QMobileAPI2eeoiyAA9AttributeV6FilterCAF10ExpressionC_AHtF">==(_:_:)</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Functions.html#/s:10QMobileAPI2eeoiyAA9AttributeV6FilterCAF10ExpressionC_yptF">==(_:_:)</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Functions.html#/s:10QMobileAPI1goiyAA9AttributeV6FilterCAD_yptF">&gt;(_:_:)</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Functions.html#/s:10QMobileAPI1goiyAA9AttributeV6FilterCAF10ExpressionC_AHtF">&gt;(_:_:)</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Functions.html#/s:10QMobileAPI1goiyAA9AttributeV6FilterCAF10ExpressionC_yptF">&gt;(_:_:)</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Functions.html#/s:10QMobileAPI2geoiyAA9AttributeV6FilterCAD_yptF">&gt;=(_:_:)</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Functions.html#/s:10QMobileAPI2geoiyAA9AttributeV6FilterCAF10ExpressionC_AHtF">&gt;=(_:_:)</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Functions.html#/s:10QMobileAPI2geoiyAA9AttributeV6FilterCAF10ExpressionC_yptF">&gt;=(_:_:)</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Functions.html#/s:10QMobileAPI2oooiyAA9AttributeV6FilterCAF_AFtF">||(_:_:)</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Protocols.html">Protocols</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Protocols/APIManagerDelegate.html">APIManagerDelegate</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/ActionParameterEncodable.html">ActionParameterEncodable</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/AttributeType.html">AttributeType</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/DecodableTargetType.html">DecodableTargetType</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/DictionaryConvertible.html">DictionaryConvertible</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/Emptyable.html">Emptyable</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/EntitySetIdConvertible.html">EntitySetIdConvertible</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/ErrorConvertible.html">ErrorConvertible</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/ErrorWithCause.html">ErrorWithCause</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/ImportableBuilder.html">ImportableBuilder</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/IsMultipleOf.html">IsMultipleOf</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/JSONDecodable.html">JSONDecodable</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/JSONEncodable.html">JSONEncodable</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/Lockable.html">Lockable</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/LockableBySemaphore.html">LockableBySemaphore</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/LockableBySync.html">LockableBySync</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/RecordImportable.html">RecordImportable</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/RecordsRequest.html">RecordsRequest</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/RecordsTargetType.html">RecordsTargetType</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/Retryable.html">Retryable</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/StubDelegate.html">StubDelegate</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/TimeoutTarget.html">TimeoutTarget</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/VeryCodable.html">VeryCodable</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Structs.html">Structures</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Structs/Action.html">Action</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/ActionParameter.html">ActionParameter</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/ActionParametersKey.html">ActionParametersKey</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/ActionResult.html">ActionResult</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/ActionSheet.html">ActionSheet</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/AnyCodable.html">AnyCodable</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/AnyDecodable.html">AnyDecodable</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/AnyEncodable.html">AnyEncodable</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/ApplicationInfo.html">ApplicationInfo</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/Attribute.html">Attribute</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/Attribute/Filter.html">– Filter</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/Attribute/Comparator.html">– Comparator</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/Attribute/ComparisonFilter.html">– ComparisonFilter</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/Attribute/Conjunction.html">– Conjunction</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/Attribute/CompoundFilter.html">– CompoundFilter</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/AttributeNameTransformer.html">AttributeNameTransformer</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/AttributeRelativeType.html">AttributeRelativeType</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/AuthToken.html">AuthToken</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/CacheInfo.html">CacheInfo</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/CacheObject.html">CacheObject</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/CacheObjects.html">CacheObjects</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/Catalog.html">Catalog</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/ClassStore.html">ClassStore</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/Compute.html">Compute</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/Deferred.html">Deferred</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/DeletedRecord.html">DeletedRecord</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/DeletedRecordKey.html">DeletedRecordKey</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/EntitySet.html">EntitySet</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/EntitySetInfo.html">EntitySetInfo</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/ImportableParser.html">ImportableParser</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/ImportableParser/Error.html">– Error</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/Info.html">Info</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/ItunesLookup.html">ItunesLookup</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/ItunesLookupItem.html">ItunesLookupItem</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/Key.html">Key</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/Page.html">Page</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/PageInfo.html">PageInfo</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/ProgressInfo.html">ProgressInfo</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/RecordJSON.html">RecordJSON</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/RestError.html">RestError</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/RestErrors.html">RestErrors</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/RestKey.html">RestKey</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/Retry.html">Retry</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/SemVersion.html">SemVersion</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/ServerVersion.html">ServerVersion</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/SessionInfo.html">SessionInfo</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/Status.html">Status</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/StringDictContainer.html">StringDictContainer</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/Table.html">Table</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/TableMethod.html">TableMethod</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/UploadResult.html">UploadResult</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/UploadUpdate.html">UploadUpdate</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/UserInfoResult.html">UserInfoResult</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/WebTestInfo.html">WebTestInfo</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Typealiases.html">Type Aliases</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Typealiases.html#/s:10QMobileAPI16ActionParametersa">ActionParameters</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Typealiases.html#/s:10QMobileAPI17ComputeResultTypea">ComputeResultType</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Typealiases.html#/s:10QMobileAPI6Devicea">Device</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Typealiases.html#/s:10QMobileAPI9ImportKeya">ImportKey</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Typealiases.html#/s:10QMobileAPI4JSONa">JSON</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Typealiases.html#/s:10QMobileAPI11JSONCodablea">JSONCodable</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Typealiases.html#/s:10QMobileAPI9JSONErrora">JSONError</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Typealiases.html#/s:10QMobileAPI8LogLevela">LogLevel</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Typealiases.html#/s:10QMobileAPI26NetworkReachabilityManagera">NetworkReachabilityManager</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Typealiases.html#/s:10QMobileAPI25NetworkReachabilityStatusa">NetworkReachabilityStatus</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Typealiases.html#/s:10QMobileAPI7URLPatha">URLPath</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      <article class="main-content">
+        <section>
+          <section class="section">
+            <h1>RestErrorCode</h1>
+              <div class="declaration">
+                <div class="language">
+                  
+                  <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">enum</span> <span class="kt">RestErrorCode</span> <span class="p">:</span> <span class="kt">Int</span></code></pre>
+
+                </div>
+              </div>
+            <p>Undocumented</p>
+
+          </section>
+          <section class="section task-group-section">
+            <div class="task-group">
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:10QMobileAPI13RestErrorCodeO16entity_not_foundyA2CmF"></a>
+                    <a name="//apple_ref/swift/Element/entity_not_found" class="dashAnchor"></a>
+                    <a class="token" href="#/s:10QMobileAPI13RestErrorCodeO16entity_not_foundyA2CmF">entity_not_found</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">case</span> <span class="n">entity_not_found</span> <span class="o">=</span> <span class="mi">1800</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:10QMobileAPI13RestErrorCodeO18unsupported_formatyA2CmF"></a>
+                    <a name="//apple_ref/swift/Element/unsupported_format" class="dashAnchor"></a>
+                    <a class="token" href="#/s:10QMobileAPI13RestErrorCodeO18unsupported_formatyA2CmF">unsupported_format</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">case</span> <span class="n">unsupported_format</span> <span class="o">=</span> <span class="mi">1801</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:10QMobileAPI13RestErrorCodeO17dataset_not_foundyA2CmF"></a>
+                    <a name="//apple_ref/swift/Element/dataset_not_found" class="dashAnchor"></a>
+                    <a class="token" href="#/s:10QMobileAPI13RestErrorCodeO17dataset_not_foundyA2CmF">dataset_not_found</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">case</span> <span class="n">dataset_not_found</span> <span class="o">=</span> <span class="mi">1802</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:10QMobileAPI13RestErrorCodeO32dataset_not_matching_entitymodelyA2CmF"></a>
+                    <a name="//apple_ref/swift/Element/dataset_not_matching_entitymodel" class="dashAnchor"></a>
+                    <a class="token" href="#/s:10QMobileAPI13RestErrorCodeO32dataset_not_matching_entitymodelyA2CmF">dataset_not_matching_entitymodel</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">case</span> <span class="n">dataset_not_matching_entitymodel</span> <span class="o">=</span> <span class="mi">1803</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:10QMobileAPI13RestErrorCodeO30cannot_build_list_of_attributeyA2CmF"></a>
+                    <a name="//apple_ref/swift/Element/cannot_build_list_of_attribute" class="dashAnchor"></a>
+                    <a class="token" href="#/s:10QMobileAPI13RestErrorCodeO30cannot_build_list_of_attributeyA2CmF">cannot_build_list_of_attribute</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">case</span> <span class="n">cannot_build_list_of_attribute</span> <span class="o">=</span> <span class="mi">1804</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:10QMobileAPI13RestErrorCodeO41cannot_build_list_of_attribute_for_expandyA2CmF"></a>
+                    <a name="//apple_ref/swift/Element/cannot_build_list_of_attribute_for_expand" class="dashAnchor"></a>
+                    <a class="token" href="#/s:10QMobileAPI13RestErrorCodeO41cannot_build_list_of_attribute_for_expandyA2CmF">cannot_build_list_of_attribute_for_expand</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">case</span> <span class="n">cannot_build_list_of_attribute_for_expand</span> <span class="o">=</span> <span class="mi">1805</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:10QMobileAPI13RestErrorCodeO16url_is_malformedyA2CmF"></a>
+                    <a name="//apple_ref/swift/Element/url_is_malformed" class="dashAnchor"></a>
+                    <a class="token" href="#/s:10QMobileAPI13RestErrorCodeO16url_is_malformedyA2CmF">url_is_malformed</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">case</span> <span class="n">url_is_malformed</span> <span class="o">=</span> <span class="mi">1806</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:10QMobileAPI13RestErrorCodeO33ampersand_instead_of_questionmarkyA2CmF"></a>
+                    <a name="//apple_ref/swift/Element/ampersand_instead_of_questionmark" class="dashAnchor"></a>
+                    <a class="token" href="#/s:10QMobileAPI13RestErrorCodeO33ampersand_instead_of_questionmarkyA2CmF">ampersand_instead_of_questionmark</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">case</span> <span class="n">ampersand_instead_of_questionmark</span> <span class="o">=</span> <span class="mi">1807</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:10QMobileAPI13RestErrorCodeO30expecting_closing_single_quoteyA2CmF"></a>
+                    <a name="//apple_ref/swift/Element/expecting_closing_single_quote" class="dashAnchor"></a>
+                    <a class="token" href="#/s:10QMobileAPI13RestErrorCodeO30expecting_closing_single_quoteyA2CmF">expecting_closing_single_quote</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">case</span> <span class="n">expecting_closing_single_quote</span> <span class="o">=</span> <span class="mi">1808</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:10QMobileAPI13RestErrorCodeO30expecting_closing_double_quoteyA2CmF"></a>
+                    <a name="//apple_ref/swift/Element/expecting_closing_double_quote" class="dashAnchor"></a>
+                    <a class="token" href="#/s:10QMobileAPI13RestErrorCodeO30expecting_closing_double_quoteyA2CmF">expecting_closing_double_quote</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">case</span> <span class="n">expecting_closing_double_quote</span> <span class="o">=</span> <span class="mi">1809</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:10QMobileAPI13RestErrorCodeO35wrong_list_of_attribute_to_order_byyA2CmF"></a>
+                    <a name="//apple_ref/swift/Element/wrong_list_of_attribute_to_order_by" class="dashAnchor"></a>
+                    <a class="token" href="#/s:10QMobileAPI13RestErrorCodeO35wrong_list_of_attribute_to_order_byyA2CmF">wrong_list_of_attribute_to_order_by</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">case</span> <span class="n">wrong_list_of_attribute_to_order_by</span> <span class="o">=</span> <span class="mi">1810</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:10QMobileAPI13RestErrorCodeO26unknown_rest_query_keywordyA2CmF"></a>
+                    <a name="//apple_ref/swift/Element/unknown_rest_query_keyword" class="dashAnchor"></a>
+                    <a class="token" href="#/s:10QMobileAPI13RestErrorCodeO26unknown_rest_query_keywordyA2CmF">unknown_rest_query_keyword</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">case</span> <span class="n">unknown_rest_query_keyword</span> <span class="o">=</span> <span class="mi">1811</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:10QMobileAPI13RestErrorCodeO19unknown_rest_methodyA2CmF"></a>
+                    <a name="//apple_ref/swift/Element/unknown_rest_method" class="dashAnchor"></a>
+                    <a class="token" href="#/s:10QMobileAPI13RestErrorCodeO19unknown_rest_methodyA2CmF">unknown_rest_method</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">case</span> <span class="n">unknown_rest_method</span> <span class="o">=</span> <span class="mi">1812</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:10QMobileAPI13RestErrorCodeO21method_not_applicableyA2CmF"></a>
+                    <a name="//apple_ref/swift/Element/method_not_applicable" class="dashAnchor"></a>
+                    <a class="token" href="#/s:10QMobileAPI13RestErrorCodeO21method_not_applicableyA2CmF">method_not_applicable</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">case</span> <span class="n">method_not_applicable</span> <span class="o">=</span> <span class="mi">1813</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:10QMobileAPI13RestErrorCodeO21uag_db_does_not_existyA2CmF"></a>
+                    <a name="//apple_ref/swift/Element/uag_db_does_not_exist" class="dashAnchor"></a>
+                    <a class="token" href="#/s:10QMobileAPI13RestErrorCodeO21uag_db_does_not_existyA2CmF">uag_db_does_not_exist</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">case</span> <span class="n">uag_db_does_not_exist</span> <span class="o">=</span> <span class="mi">1814</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:10QMobileAPI13RestErrorCodeO35subentityset_cannot_be_applied_hereyA2CmF"></a>
+                    <a name="//apple_ref/swift/Element/subentityset_cannot_be_applied_here" class="dashAnchor"></a>
+                    <a class="token" href="#/s:10QMobileAPI13RestErrorCodeO35subentityset_cannot_be_applied_hereyA2CmF">subentityset_cannot_be_applied_here</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">case</span> <span class="n">subentityset_cannot_be_applied_here</span> <span class="o">=</span> <span class="mi">1815</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:10QMobileAPI13RestErrorCodeO20empty_attribute_listyA2CmF"></a>
+                    <a name="//apple_ref/swift/Element/empty_attribute_list" class="dashAnchor"></a>
+                    <a class="token" href="#/s:10QMobileAPI13RestErrorCodeO20empty_attribute_listyA2CmF">empty_attribute_list</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">case</span> <span class="n">empty_attribute_list</span> <span class="o">=</span> <span class="mi">1816</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:10QMobileAPI13RestErrorCodeO29compute_action_does_not_existyA2CmF"></a>
+                    <a name="//apple_ref/swift/Element/compute_action_does_not_exist" class="dashAnchor"></a>
+                    <a class="token" href="#/s:10QMobileAPI13RestErrorCodeO29compute_action_does_not_existyA2CmF">compute_action_does_not_exist</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">case</span> <span class="n">compute_action_does_not_exist</span> <span class="o">=</span> <span class="mi">1817</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:10QMobileAPI13RestErrorCodeO20wrong_logic_operatoryA2CmF"></a>
+                    <a name="//apple_ref/swift/Element/wrong_logic_operator" class="dashAnchor"></a>
+                    <a class="token" href="#/s:10QMobileAPI13RestErrorCodeO20wrong_logic_operatoryA2CmF">wrong_logic_operator</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">case</span> <span class="n">wrong_logic_operator</span> <span class="o">=</span> <span class="mi">1818</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:10QMobileAPI13RestErrorCodeO28missing_other_collection_refyA2CmF"></a>
+                    <a name="//apple_ref/swift/Element/missing_other_collection_ref" class="dashAnchor"></a>
+                    <a class="token" href="#/s:10QMobileAPI13RestErrorCodeO28missing_other_collection_refyA2CmF">missing_other_collection_ref</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">case</span> <span class="n">missing_other_collection_ref</span> <span class="o">=</span> <span class="mi">1819</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:10QMobileAPI13RestErrorCodeO26wrong_other_collection_refyA2CmF"></a>
+                    <a name="//apple_ref/swift/Element/wrong_other_collection_ref" class="dashAnchor"></a>
+                    <a class="token" href="#/s:10QMobileAPI13RestErrorCodeO26wrong_other_collection_refyA2CmF">wrong_other_collection_ref</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">case</span> <span class="n">wrong_other_collection_ref</span> <span class="o">=</span> <span class="mi">1820</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:10QMobileAPI13RestErrorCodeO25wrong_transaction_commandyA2CmF"></a>
+                    <a name="//apple_ref/swift/Element/wrong_transaction_command" class="dashAnchor"></a>
+                    <a class="token" href="#/s:10QMobileAPI13RestErrorCodeO25wrong_transaction_commandyA2CmF">wrong_transaction_command</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">case</span> <span class="n">wrong_transaction_command</span> <span class="o">=</span> <span class="mi">1821</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:10QMobileAPI13RestErrorCodeO12login_failedyA2CmF"></a>
+                    <a name="//apple_ref/swift/Element/login_failed" class="dashAnchor"></a>
+                    <a class="token" href="#/s:10QMobileAPI13RestErrorCodeO12login_failedyA2CmF">login_failed</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">case</span> <span class="n">login_failed</span> <span class="o">=</span> <span class="mi">1822</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:10QMobileAPI13RestErrorCodeO30max_number_of_sessions_reachedyA2CmF"></a>
+                    <a name="//apple_ref/swift/Element/max_number_of_sessions_reached" class="dashAnchor"></a>
+                    <a class="token" href="#/s:10QMobileAPI13RestErrorCodeO30max_number_of_sessions_reachedyA2CmF">max_number_of_sessions_reached</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">case</span> <span class="n">max_number_of_sessions_reached</span> <span class="o">=</span> <span class="mi">1823</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:10QMobileAPI13RestErrorCodeO25unknown_picture_mime_typeyA2CmF"></a>
+                    <a name="//apple_ref/swift/Element/unknown_picture_mime_type" class="dashAnchor"></a>
+                    <a class="token" href="#/s:10QMobileAPI13RestErrorCodeO25unknown_picture_mime_typeyA2CmF">unknown_picture_mime_type</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">case</span> <span class="n">unknown_picture_mime_type</span> <span class="o">=</span> <span class="mi">1824</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:10QMobileAPI13RestErrorCodeO19missing_picture_refyA2CmF"></a>
+                    <a name="//apple_ref/swift/Element/missing_picture_ref" class="dashAnchor"></a>
+                    <a class="token" href="#/s:10QMobileAPI13RestErrorCodeO19missing_picture_refyA2CmF">missing_picture_ref</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">case</span> <span class="n">missing_picture_ref</span> <span class="o">=</span> <span class="mi">1825</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:10QMobileAPI13RestErrorCodeO16missing_blob_refyA2CmF"></a>
+                    <a name="//apple_ref/swift/Element/missing_blob_ref" class="dashAnchor"></a>
+                    <a class="token" href="#/s:10QMobileAPI13RestErrorCodeO16missing_blob_refyA2CmF">missing_blob_ref</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">case</span> <span class="n">missing_blob_ref</span> <span class="o">=</span> <span class="mi">1826</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:10QMobileAPI13RestErrorCodeO22method_name_is_unknownyA2CmF"></a>
+                    <a name="//apple_ref/swift/Element/method_name_is_unknown" class="dashAnchor"></a>
+                    <a class="token" href="#/s:10QMobileAPI13RestErrorCodeO22method_name_is_unknownyA2CmF">method_name_is_unknown</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">case</span> <span class="n">method_name_is_unknown</span> <span class="o">=</span> <span class="mi">1827</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:10QMobileAPI13RestErrorCodeO19limited_alterationsyA2CmF"></a>
+                    <a name="//apple_ref/swift/Element/limited_alterations" class="dashAnchor"></a>
+                    <a class="token" href="#/s:10QMobileAPI13RestErrorCodeO19limited_alterationsyA2CmF">limited_alterations</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">case</span> <span class="n">limited_alterations</span> <span class="o">=</span> <span class="mi">1828</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:10QMobileAPI13RestErrorCodeO27method_called_on_a_HTTP_GETyA2CmF"></a>
+                    <a name="//apple_ref/swift/Element/method_called_on_a_HTTP_GET" class="dashAnchor"></a>
+                    <a class="token" href="#/s:10QMobileAPI13RestErrorCodeO27method_called_on_a_HTTP_GETyA2CmF">method_called_on_a_HTTP_GET</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">case</span> <span class="n">method_called_on_a_HTTP_GET</span> <span class="o">=</span> <span class="mi">1829</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:10QMobileAPI13RestErrorCodeO19wrong_comp_operatoryA2CmF"></a>
+                    <a name="//apple_ref/swift/Element/wrong_comp_operator" class="dashAnchor"></a>
+                    <a class="token" href="#/s:10QMobileAPI13RestErrorCodeO19wrong_comp_operatoryA2CmF">wrong_comp_operator</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">case</span> <span class="n">wrong_comp_operator</span> <span class="o">=</span> <span class="mi">1112</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:10QMobileAPI13RestErrorCodeO13invalid_queryyA2CmF"></a>
+                    <a name="//apple_ref/swift/Element/invalid_query" class="dashAnchor"></a>
+                    <a class="token" href="#/s:10QMobileAPI13RestErrorCodeO13invalid_queryyA2CmF">invalid_query</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">case</span> <span class="n">invalid_query</span> <span class="o">=</span> <span class="mi">1162</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:10QMobileAPI13RestErrorCodeO21cannot_complete_queryyA2CmF"></a>
+                    <a name="//apple_ref/swift/Element/cannot_complete_query" class="dashAnchor"></a>
+                    <a class="token" href="#/s:10QMobileAPI13RestErrorCodeO21cannot_complete_queryyA2CmF">cannot_complete_query</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">case</span> <span class="n">cannot_complete_query</span> <span class="o">=</span> <span class="mi">1200</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:10QMobileAPI13RestErrorCodeO20cannot_analyze_queryyA2CmF"></a>
+                    <a name="//apple_ref/swift/Element/cannot_analyze_query" class="dashAnchor"></a>
+                    <a class="token" href="#/s:10QMobileAPI13RestErrorCodeO20cannot_analyze_queryyA2CmF">cannot_analyze_query</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">case</span> <span class="n">cannot_analyze_query</span> <span class="o">=</span> <span class="mi">1201</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:10QMobileAPI13RestErrorCodeO28cannot_complete_complexqueryyA2CmF"></a>
+                    <a name="//apple_ref/swift/Element/cannot_complete_complexquery" class="dashAnchor"></a>
+                    <a class="token" href="#/s:10QMobileAPI13RestErrorCodeO28cannot_complete_complexqueryyA2CmF">cannot_complete_complexquery</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">case</span> <span class="n">cannot_complete_complexquery</span> <span class="o">=</span> <span class="mi">1203</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:10QMobileAPI13RestErrorCodeO27cannot_analyze_complexqueryyA2CmF"></a>
+                    <a name="//apple_ref/swift/Element/cannot_analyze_complexquery" class="dashAnchor"></a>
+                    <a class="token" href="#/s:10QMobileAPI13RestErrorCodeO27cannot_analyze_complexqueryyA2CmF">cannot_analyze_complexquery</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">case</span> <span class="n">cannot_analyze_complexquery</span> <span class="o">=</span> <span class="mi">1204</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:10QMobileAPI13RestErrorCodeO36query_placeholder_is_missing_or_nullyA2CmF"></a>
+                    <a name="//apple_ref/swift/Element/query_placeholder_is_missing_or_null" class="dashAnchor"></a>
+                    <a class="token" href="#/s:10QMobileAPI13RestErrorCodeO36query_placeholder_is_missing_or_nullyA2CmF">query_placeholder_is_missing_or_null</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">case</span> <span class="n">query_placeholder_is_missing_or_null</span> <span class="o">=</span> <span class="mi">1279</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:10QMobileAPI13RestErrorCodeO27query_placeholder_wrongtypeyA2CmF"></a>
+                    <a name="//apple_ref/swift/Element/query_placeholder_wrongtype" class="dashAnchor"></a>
+                    <a class="token" href="#/s:10QMobileAPI13RestErrorCodeO27query_placeholder_wrongtypeyA2CmF">query_placeholder_wrongtype</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">case</span> <span class="n">query_placeholder_wrongtype</span> <span class="o">=</span> <span class="mi">1280</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:10QMobileAPI13RestErrorCodeO26entity_attribute_not_foundyA2CmF"></a>
+                    <a name="//apple_ref/swift/Element/entity_attribute_not_found" class="dashAnchor"></a>
+                    <a class="token" href="#/s:10QMobileAPI13RestErrorCodeO26entity_attribute_not_foundyA2CmF">entity_attribute_not_found</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">case</span> <span class="n">entity_attribute_not_found</span> <span class="o">=</span> <span class="mi">1500</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:10QMobileAPI13RestErrorCodeO7messageSSvp"></a>
+                    <a name="//apple_ref/swift/Property/message" class="dashAnchor"></a>
+                    <a class="token" href="#/s:10QMobileAPI13RestErrorCodeO7messageSSvp">message</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">message</span><span class="p">:</span> <span class="kt">String</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:10QMobileAPI13RestErrorCodeO16localizedMessageSSvp"></a>
+                    <a name="//apple_ref/swift/Property/localizedMessage" class="dashAnchor"></a>
+                    <a class="token" href="#/s:10QMobileAPI13RestErrorCodeO16localizedMessageSSvp">localizedMessage</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">localizedMessage</span><span class="p">:</span> <span class="kt">String</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </section>
+        </section>
+        <section id="footer">
+          <p>&copy; 2021 <a class="link" href="https://project.wakanda.org/issues/88964" target="_blank" rel="external">Eric Marchand</a>. All rights reserved. (Last updated: 2021-04-17)</p>
+          <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.13.6</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
+        </section>
+      </article>
+    </div>
+  </body>
+</div>
+</html>
