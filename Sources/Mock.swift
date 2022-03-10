@@ -226,3 +226,13 @@ extension Attribute: Hashable {
         hasher.combine(self.name)
     }
 }
+
+public struct Device {
+    public static let current = Device()
+    
+    public var identifier: String = "mock"
+    
+    var isSimulator: Bool { return false }
+    var isSimulatorCase: Bool { return false }
+
+}
