@@ -236,3 +236,39 @@ public struct Device {
     var isSimulatorCase: Bool { return false }
 
 }
+
+public protocol Emptyable {
+    var isEmpty: Bool { get }
+}
+extension String: Emptyable {}
+extension Array: Emptyable {}
+extension Dictionary: Emptyable {}
+
+infix operator ???: NilCoalescingPrecedence
+
+extension Optional where Wrapped: Emptyable {
+    public var isEmpty: Bool {
+        switch self {
+        case .none:
+            return true
+
+        case .some(let wrapped):
+            return wrapped.isEmpty
+        }
+    }
+
+    func orWhenNilOrEmpty(_ defaultValue: Wrapped) -> Wrapped {
+        switch self {
+        case .none:
+            return defaultValue
+        case .some(let value) where value.isEmpty:
+            return defaultValue
+        case .some(let value):
+            return value
+        }
+    }
+
+    static func ??? (left: Wrapped?, right: Wrapped) -> Wrapped {
+        return left.orWhenNilOrEmpty(right)
+    }
+}
